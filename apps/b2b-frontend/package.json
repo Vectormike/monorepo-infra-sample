@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "codegen": "graphql-codegen --config codegen.js",
+    "deploy": "nx build website && pnpm deployPreBuilt",
+    "deployPreBuilt": "CLOUDFLARE_ACCOUNT_ID=721fce7195878ee71fe6ae140dbb50ce wrangler pages publish dist/apps/website --project-name=edvise-website",
+    "get-schema": "get-graphql-schema https://expp74jmu7.execute-api.us-east-1.amazonaws.com > schema.graphql --graphql",
+    "relay": "relay-compiler"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ],
+    "plugins": [
+      [
+        "relay"
+      ]
+    ]
+  }
+}

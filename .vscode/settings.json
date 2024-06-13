@@ -1,0 +1,27 @@
+{
+  "eslint.format.enable": true,
+  "eslint.packageManager": "pnpm",
+  "eslint.workingDirectories": [{
+    "pattern": "./{apps,libs}/*"
+    }],
+  "eslint.runtime": "node",
+  "[javascript][javascriptreact][typescript][typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "maptz.regionfolder": {
+    "[prisma]": {
+      "foldStart": "// #region [NAME]",
+      "foldStartRegex": "//[\\s]*#region[\\s]*(.*)",
+      "foldEnd": "// #endregion",
+      "foldEndRegex": "//[\\s]*#endregion"
+    }
+  },
+  "cSpell.words": [
+    "edvise",
+    "pothos",
+    "propelauth",
+    "serverful"
+  ],
+  "prettier.configPath": ".prettierrc",
+  "prettier.ignorePath": "./.prettierignore",
+}

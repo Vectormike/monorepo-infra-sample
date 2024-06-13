@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "resetDB": "foy resetDB",
+    "seed:demo": "foy seed --demo",
+    "seed:test": "foy seed --test"
+  }
+}

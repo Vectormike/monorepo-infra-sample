@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "deploy": "nx build graphql-playground && pnpm deployPreBuilt",
+    "deployPreBuilt": "CLOUDFLARE_ACCOUNT_ID=721fce7195878ee71fe6ae140dbb50ce wrangler pages publish ../../dist/apps/graphql-playground --project-name=edvise-graphql"
+  }
+}

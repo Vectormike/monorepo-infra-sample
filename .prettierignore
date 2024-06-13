@@ -1,0 +1,20 @@
+node_modules
+
+# Files covered by ESLint
+*.ts
+*.tsx
+*.js
+*.jsx
+*.cjs
+*.mjs
+
+# Machine-generated files that shouldn't be tinkered with
+pnpm-lock.yaml
+.serverless
+
+# Artifacts
+build
+coverage
+dist
+scripts
+src/__generated

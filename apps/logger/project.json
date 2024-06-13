@@ -1,0 +1,25 @@
+{
+  "name": "mailer",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/mailer/src",
+  "projectType": "application",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/mailer/**/*.ts"]
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "wrangler dev src/index.ts --local"
+        ],
+        "cwd": "apps/mailer"
+      }
+    }
+  },
+  "tags": []
+}
